@@ -1,0 +1,38 @@
+<section class="bg-question py-5" id="Contact">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 ">
+                <div class="signup-form">
+                    <form action="/index" class="border p-4 shadow-lg msgForm" method="POST">
+                        <h4 class="mb-4 pt-5 text-center fs-3"><b>Ask your Questions</b></h4>
+                        <div class="row">
+                            {{!-- <input type="text" name="userID"> --}}
+
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <label>Full Name<span class="text-danger">*</span></label>
+                                <input type="text" name="fullName" class="form-control" placeholder="Enter Full Name" required>
+                                <div class="invalid-feedback">
+                                    Please write your full name
+                                </div>
+                            </div>
+                          
+                            <div class="mb-3 col-md-6 col-sm-12">
+                                <label>Email<span class="text-danger">*</span></label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email"required>
+                            </div>
+
+                            <div class="mb-3 col-md-12 col-sm-12">
+                                <label for="exampleFormControlTextarea1">Write your Message</label>
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" required rows="5"></textarea>
+                            </div>
+
+                            <div class="col-md-12">
+                                <button class="btn-invest d-flex mx-auto my-3" type="submit" value="Message">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
